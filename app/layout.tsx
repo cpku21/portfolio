@@ -20,21 +20,21 @@ const geistMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Srdjan Vasic — Full-Stack Developer',
+  title: 'Srdjan Vasic | Junior Frontend Developer',
   description:
-    'Portfolio of Srdjan Vasic, a full-stack developer building reliable and human-centered web applications.',
+    'Portfolio of Srdjan Vasic, a junior frontend developer working with React, Next.js and TypeScript.',
   openGraph: {
-    title: 'Srdjan Vasic — Full-Stack Developer',
+    title: 'Srdjan Vasic | Junior Frontend Developer',
     description:
-      'Full-stack developer building reliable and human-centered web applications.',
+      'Junior frontend developer building dependable web products with React, Next.js and TypeScript.',
     type: 'website',
     images: [{ url: '/og.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Srdjan Vasic — Full-Stack Developer',
+    title: 'Srdjan Vasic | Junior Frontend Developer',
     description:
-      'Full-stack developer building reliable and human-centered web applications.',
+      'Junior frontend developer building dependable web products with React, Next.js and TypeScript.',
     images: ['/og.png'],
   },
 };
