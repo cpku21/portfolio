@@ -1,4 +1,4 @@
-import { profile, projects, skills } from './content';
+import { approach, profile, projects, skills } from './content';
 
 const External = ({ href, children, className }: { href: string; children: React.ReactNode; className?: string }) => (
   <a className={className} href={href} target="_blank" rel="noreferrer">
@@ -14,6 +14,7 @@ export default function Home() {
           {profile.name}
         </a>
         <div className="navLinks">
+          <a href="#approach">How I work</a>
           <a href="#work">Projects</a>
           <a href="#skills">Skills</a>
           <a className="navCta" href={`mailto:${profile.email}`}>
@@ -38,6 +39,21 @@ export default function Home() {
           <External className="button buttonSecondary" href={profile.linkedin}>
             LinkedIn
           </External>
+        </div>
+      </section>
+
+      <section className="section pageShell" id="approach" aria-labelledby="approach-title">
+        <div className="sectionHeading">
+          <p className="sectionLabel">How I work</p>
+          <h2 id="approach-title">Product, full stack and AI</h2>
+        </div>
+        <div className="approachGrid">
+          {approach.map((item) => (
+            <article className="skillGroup" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
