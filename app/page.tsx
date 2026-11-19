@@ -24,7 +24,7 @@ export default function Home() {
 
       <section className="hero pageShell" id="top">
         <p className="eyebrow">
-          <span className="statusDot" /> Open to junior opportunities
+          <span className="statusDot" /> Open to new opportunities
         </p>
         <h1>{profile.headline}</h1>
         <p className="heroText">{profile.intro}</p>
@@ -104,7 +104,7 @@ export default function Home() {
         <div className="pageShell contactGrid">
           <div>
             <p className="sectionLabel">Contact</p>
-            <h2>Let&apos;s talk about a junior opportunity.</h2>
+            <h2>Let&apos;s build something together.</h2>
             <p>
               {profile.location} · {profile.lookingFor}
             </p>

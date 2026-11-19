@@ -2,13 +2,13 @@
 
 export const profile = {
   name: 'Srdjan Vasic',
-  title: 'Junior Full-Stack Developer',
+  title: 'Full-Stack Developer',
   headline:
     'Full-stack developer building and shipping web products with React, Next.js and TypeScript.',
   intro:
     'I take products from the first screen to the production database: interfaces, APIs, data models, tests and deployment. I am self-taught, with a mechanical engineering background, and I use AI tools daily while reviewing, testing and owning what ships.',
   location: 'Novi Sad, Serbia',
-  lookingFor: 'Junior frontend or full-stack roles, hybrid or remote',
+  lookingFor: 'Open to frontend and full-stack roles, hybrid or remote',
   email: 'srdjanns95@gmail.com',
   github: 'https://github.com/cpku21',
   linkedin: 'https://www.linkedin.com/in/srdjanvasic-dev/',
