@@ -196,3 +196,7 @@ Full-stack developer and mechanical engineer
 
 I am currently open to junior software development opportunities where I can contribute, learn from experienced developers and continue building reliable, user-focused products.
 
+
+## Editing content
+
+All text on the site (profile, projects, skills, links) lives in `app/content.ts`. Edit that file, run `npm run build` to check, and push; Vercel redeploys automatically.

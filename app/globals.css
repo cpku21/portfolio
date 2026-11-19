@@ -135,13 +135,6 @@ p {
   line-height: 1.7;
 }
 
-.heroSupportingText {
-  max-width: 760px;
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-}
-
 .heroActions,
 .projectActions {
   display: flex;
@@ -185,46 +178,15 @@ p {
   color: var(--brand);
 }
 
-.quickFacts {
-  margin: 70px 0 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.quickFacts div {
-  padding: 20px 18px 20px 0;
-}
-
-.quickFacts dt {
-  margin-bottom: 4px;
-  color: var(--muted);
-  font-size: 0.75rem;
-  font-weight: 650;
-  text-transform: uppercase;
-}
-
-.quickFacts dd {
-  margin: 0;
-  font-size: 0.94rem;
-  font-weight: 700;
-}
-
 .section {
   padding: 104px 0;
 }
 
 .sectionHeading {
-  display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  gap: 64px;
-  align-items: start;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 
 .sectionHeading h2,
-.aboutGrid h2,
 .contactGrid h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3.15rem);
@@ -245,9 +207,7 @@ p {
 }
 
 .skillGroup,
-.earlierCard,
-.decisionGrid article,
-.userFlows article {
+.earlierCard {
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--white);
@@ -257,11 +217,7 @@ p {
   padding: 26px;
 }
 
-.skillGroup h3,
-.projectOverview h3,
-.userFlows h3,
-.decisionSection > h3,
-.stackBlock h3 {
+.skillGroup h3 {
   margin: 0;
   font-size: 1rem;
 }
@@ -286,55 +242,6 @@ p {
   font-weight: 650;
 }
 
-.projectSection {
-  padding: 104px 0;
-  border-block: 1px solid var(--border);
-  background: var(--surface);
-}
-
-.projectHeading {
-  margin-bottom: 50px;
-}
-
-.projectOverview {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 22px;
-}
-
-.projectSummary,
-.projectRole {
-  padding: 28px;
-  border-radius: 12px;
-}
-
-.projectSummary {
-  background: var(--ink);
-  color: var(--white);
-}
-
-.projectRole {
-  border: 1px solid #bfdbfe;
-  background: var(--brand-tint);
-}
-
-.projectOverview p {
-  margin: 14px 0 0;
-  color: inherit;
-  opacity: 0.86;
-}
-
-.userFlows {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin-top: 18px;
-}
-
-.userFlows article {
-  padding: 26px;
-}
-
 .checkList {
   margin: 17px 0 0;
   padding: 0;
@@ -353,42 +260,6 @@ p {
   left: 0;
   color: var(--brand);
   font-weight: 800;
-}
-
-.decisionSection,
-.stackBlock {
-  margin-top: 64px;
-}
-
-.decisionGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 22px;
-}
-
-.decisionGrid article {
-  padding: 24px;
-}
-
-.decisionGrid h4 {
-  margin: 0;
-  font-size: 0.98rem;
-}
-
-.decisionGrid p {
-  margin: 10px 0 0;
-  color: var(--body);
-  font-size: 0.9rem;
-}
-
-.stackBlock .tagList {
-  margin-top: 18px;
-}
-
-.stackBlock .tagList li {
-  border: 1px solid var(--border);
-  background: var(--white);
 }
 
 .earlierGrid {
@@ -425,23 +296,11 @@ p {
   border-top: 1px solid var(--border);
 }
 
-.aboutSection {
-  padding: 100px 0;
-  background: var(--ink);
-  color: var(--white);
-}
-
-.aboutGrid,
 .contactGrid {
   display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  gap: 64px;
-}
-
-.aboutGrid p:not(.sectionLabel) {
-  max-width: 760px;
-  margin: 24px 0 0;
-  color: #cbd5e1;
+  grid-template-columns: 1fr auto;
+  gap: 32px 64px;
+  align-items: end;
 }
 
 .contactSection {
@@ -473,20 +332,16 @@ footer p {
 }
 
 @media (max-width: 820px) {
-  .quickFacts,
   .skillsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .sectionHeading,
-  .aboutGrid,
   .contactGrid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .projectOverview,
-  .userFlows,
   .earlierGrid {
     grid-template-columns: 1fr;
   }
@@ -528,44 +383,21 @@ footer p {
     flex-direction: column;
   }
 
-  .quickFacts,
-  .skillsGrid,
-  .decisionGrid {
+  .skillsGrid {
     grid-template-columns: 1fr;
   }
 
-  .quickFacts div {
-    padding: 15px 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .quickFacts div:last-child {
-    border-bottom: 0;
-  }
-
-  .section,
-  .projectSection,
-  .aboutSection {
+  .section {
     padding: 74px 0;
   }
 
-  .sectionHeading,
-  .projectHeading {
+  .sectionHeading {
     margin-bottom: 32px;
   }
 
   .skillGroup,
-  .earlierCard,
-  .projectSummary,
-  .projectRole,
-  .userFlows article,
-  .decisionGrid article {
+  .earlierCard {
     padding: 22px;
-  }
-
-  .decisionSection,
-  .stackBlock {
-    margin-top: 48px;
   }
 
   .contactSection {
@@ -583,4 +415,19 @@ footer p {
   html {
     scroll-behavior: auto;
   }
+}
+
+.earlierCard:first-child {
+  grid-column: 1 / -1;
+}
+
+.cardNote {
+  margin: 14px 0 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.contactGrid p:not(.sectionLabel) {
+  margin: 12px 0 0;
+  opacity: 0.8;
 }
