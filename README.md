@@ -12,7 +12,7 @@ The site highlights my main full-stack project, **RentMyCar**, alongside earlier
 
 ## Purpose
 
-This portfolio is designed to answer the questions a recruiter or developer usually has when reviewing a junior candidate:
+This portfolio is designed to answer the questions a recruiter or developer usually has when reviewing a candidate:
 
 - Who is the developer?
 - What can they build?
@@ -194,7 +194,7 @@ Full-stack developer and mechanical engineer
 - GitHub: [github.com/cpku21](https://github.com/cpku21)
 - Email: [srdjanns95@gmail.com](mailto:srdjanns95@gmail.com)
 
-I am currently open to junior software development opportunities where I can contribute, learn from experienced developers and continue building reliable, user-focused products.
+I am currently open to software development opportunities where I can contribute, learn from experienced developers and continue building reliable, user-focused products.
 
 
 ## Editing content
